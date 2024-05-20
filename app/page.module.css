@@ -3,13 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 75vh;
   background-color: white;
 }
 .title {
   font-size: 1.5em;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 40px;
   font-weight: 600;
+  padding: 0 20px;
 }
 
 .container {
@@ -24,6 +26,21 @@
   justify-content: center;
 }
 
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Establece la altura del contenedor al 100% del viewport height */
+  margin-top: 0vh; /* Añade margen superior */
+  margin-bottom: 0vh; /* Añade margen inferior */
+}
+
+.logo {
+  max-width: 60%; /* Establece el ancho máximo del logo al 80% del contenedor */
+  max-height: 70%; /* Establece la altura máxima del logo al 80% del contenedor */
+}
+
+
 .category {
   color: black;
   display: flex;
@@ -35,7 +52,7 @@
   background-color: #efefef;
   cursor: pointer;
   max-width: 600px;
-  width: 120px;
+  width: 200px;
   height: 120px;
   padding: 20px;
   transition: background-color 0.3s ease;
@@ -43,5 +60,5 @@
 }
 
 .category:hover {
-  background-color: #e3e3eb;
+  background-color: #c2dcff;
 }

@@ -2,19 +2,21 @@
 
 import React from "react";
 import styles from "./page.module.css";
+import logo from './favicon.png'; // Assuming favicon.png is in the same directory
 
 const Home = () => {
   const categories = {
-    "Basic chat": "basic-chat",
-    "Function calling": "function-calling",
-    "File search": "file-search",
-    All: "all",
+    "Chat AIProp": "basic-chat",
+    "AIDocs": "file-search",
   };
 
   return (
     <main className={styles.main}>
+      <div className={styles.logoContainer}>
+        <img src={logo.src} alt="Logo" className={styles.logo} />
+      </div>
       <div className={styles.title}>
-        Explore sample apps built with Assistants API
+        Selecciona una opción y usa el asistente de tu PH como tu mano derecha
       </div>
       <div className={styles.container}>
         {Object.entries(categories).map(([name, url]) => (

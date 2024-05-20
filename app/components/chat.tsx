@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({ subsets: ["latin"] });
 import styles from "./chat.module.css";
 import { AssistantStream } from "openai/lib/AssistantStream";
 import Markdown from "react-markdown";
@@ -262,17 +264,17 @@ const Chat = ({
       >
         <input
           type="text"
-          className={styles.input}
+          className={`${styles.input} ${styles.fontStyle}`} // Agrega la clase fontStyle aquí
           value={userInput}
           onChange={(e) => setUserInput(e.target.value)}
-          placeholder="Enter your question"
+          placeholder="Escribe tu mensaje"
         />
         <button
           type="submit"
-          className={styles.button}
+          className={`${styles.button} ${styles.fontStyle}`}
           disabled={inputDisabled}
         >
-          Send
+          Enviar
         </button>
       </form>
     </div>
