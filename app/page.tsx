@@ -6,8 +6,8 @@ import logo from './favicon.png'; // Assuming favicon.png is in the same directo
 
 const Home = () => {
   const categories = {
-    "Chat AIProp": "basic-chat",
-    "AIDocs": "file-search",
+    "AI Assistant": "basic-chat",
+    "Docs Assistant": "file-search",
   };
 
   return (
@@ -16,7 +16,7 @@ const Home = () => {
         <img src={logo.src} alt="Logo" className={styles.logo} />
       </div>
       <div className={styles.title}>
-        Selecciona una opción y usa el asistente de tu PH como tu mano derecha
+        Selecciona una opción y comienza a entrenar tu AICLON
       </div>
       <div className={styles.container}>
         {Object.entries(categories).map(([name, url]) => (

@@ -8,7 +8,7 @@ export const metadata = {
   title: "AICLON Assistant",
   description: "Una IA para crear tu propia IA",
   icons: {
-    icon: "/aiclon.svg",
+    icon: "./aiclon.svg",
   },
 };
 
